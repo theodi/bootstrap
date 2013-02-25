@@ -25,9 +25,9 @@ legend {
   margin-bottom: @baseLineHeight;
   font-size: @baseFontSize * 1.5;
   line-height: @baseLineHeight * 2;
-  color: @grayDark;
+  color: @blueDarker;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid darken(@wellBackground, 15%);
 
   // Small
   small {
@@ -349,19 +349,19 @@ input[type="checkbox"][readonly] {
 
 // Warning
 .control-group.warning {
-  .formFieldState(@warningText, @warningText, @warningBackground);
+  .formFieldState(@btnWarningBackgroundHighlight, @btnWarningBackgroundHighlight, lighten(@btnWarningBackgroundHighlight, 15%));
 }
 // Error
 .control-group.error {
-  .formFieldState(@errorText, @errorText, @errorBackground);
+  .formFieldState(@btnDangerBackgroundHighlight, @btnDangerBackgroundHighlight, lighten(@btnDangerBackgroundHighlight, 15%));
 }
 // Success
 .control-group.success {
-  .formFieldState(@successText, @successText, @successBackground);
+  .formFieldState(@btnSuccessBackgroundHighlight, @btnSuccessBackgroundHighlight, lighten(@btnSuccessBackgroundHighlight, 15%));
 }
 // Success
 .control-group.info {
-  .formFieldState(@infoText, @infoText, @infoBackground);
+  .formFieldState(@btnInfoBackgroundHighlight, @btnInfoBackgroundHighlight, lighten(@btnInfoBackgroundHighlight, 15%));
 }
 
 // HTML5 invalid states
@@ -387,8 +387,8 @@ select:focus:invalid {
   padding: (@baseLineHeight - 1) 20px @baseLineHeight;
   margin-top: @baseLineHeight;
   margin-bottom: @baseLineHeight;
-  background-color: @formActionsBackground;
-  border-top: 1px solid #e5e5e5;
+  background-color: inherit;
+  border-top: 1px solid darken(@wellBackground, 15%);
   .clearfix(); // Adding clearfix to allow for .pull-right button containers
 }
 
