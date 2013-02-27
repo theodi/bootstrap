@@ -669,7 +669,7 @@ h4 small {
   font-size: 14px;
 }
 .page-header {
-  padding-bottom: 9px;
+  padding-bottom: 2px;
   margin: 20px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -873,7 +873,7 @@ legend {
   line-height: 40px;
   color: #335e79;
   border: 0;
-  border-bottom: 1px solid #7ebbe4;
+  border-bottom: 1px solid #a8d1ed;
 }
 legend small {
   font-size: 15px;
@@ -1387,7 +1387,7 @@ select:focus:invalid:focus {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: inherit;
-  border-top: 1px solid #7ebbe4;
+  border-top: 1px solid #a8d1ed;
   *zoom: 1;
 }
 .form-actions:before,
@@ -1928,7 +1928,7 @@ table th[class*="span"],
   background-color: #ee7c28;
 }
 .table tbody tr.info > td {
-  background-color: #809aae;
+  background-color: #bddcf1;
 }
 .table-hover tbody tr.success:hover > td {
   background-color: #6b9f19;
@@ -1940,7 +1940,7 @@ table th[class*="span"],
   background-color: #ea6e13;
 }
 .table-hover tbody tr.info:hover > td {
-  background-color: #708ea4;
+  background-color: #a8d1ed;
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -2601,8 +2601,8 @@ table th[class*="span"],
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #bddcf1;
-  border: 1px solid #a0cceb;
+  background-color: #e7f2fa;
+  border: 1px solid #cae3f4;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3292,11 +3292,15 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px;
 }
 .alert,
-.alert h4 {
+.alert h4,
+.alert a {
   color: #ffffff;
 }
 .alert h4 {
   margin: 0;
+}
+.alert a {
+  text-decoration: underline;
 }
 .alert .close {
   position: relative;
@@ -3323,8 +3327,8 @@ input[type="submit"].btn.btn-mini {
   color: #ffffff;
 }
 .alert-info {
-  background-color: #809aae;
-  border-color: #6a92a0;
+  background-color: #bddcf1;
+  border-color: #a0d9eb;
   color: #ffffff;
 }
 .alert-info h4 {
@@ -3404,7 +3408,7 @@ input[type="submit"].btn.btn-mini {
   margin: 9px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
-  background-color: #bddcf1;
+  background-color: #e7f2fa;
   border-bottom: 1px solid #009dd3;
 }
 .nav-tabs,
@@ -5297,16 +5301,15 @@ section {
 }
 .page-header .bookmark {
   position: absolute;
-  margin-left: -30px;
-  padding-bottom: 30px;
-  padding-left: 3px;
-  padding-right: 3px;
+  margin: -3px 0 0 -30px;
+  padding: 3px;
+  min-height: 53px;
   background-color: #009dd3;
 }
-.page-header .bookmark .icon-bookmark {
-  opacity: 0.3;
+.page-header .bookmark .icon {
+  opacity: 0.5;
 }
-.page-header .bookmark:hover .icon-bookmark {
+.page-header .bookmark:hover .icon {
   opacity: 1;
 }
 .pull-right {
