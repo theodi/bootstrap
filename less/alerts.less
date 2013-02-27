@@ -14,12 +14,16 @@
   .border-radius(@baseBorderRadius);
 }
 .alert,
-.alert h4 {
+.alert h4,
+.alert a {
   // Specified for the h4 to prevent conflicts of changing @headingsColor
   color: @warningText;
 }
 .alert h4 {
   margin: 0;
+}
+.alert a {
+  text-decoration: underline;
 }
 
 // Adjust close link position
