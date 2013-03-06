@@ -5320,6 +5320,11 @@ section {
 .page-header .bookmark:hover .icon {
   opacity: 1;
 }
+.badge-circular {
+  display: inline-block;
+  width: 14px;
+  text-align: center;
+}
 .pull-right {
   float: right;
 }
